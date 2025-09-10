@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body > h2 > span{
+    position: relative;
+    display: inline-block;
+    color: red;
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 1.25em
+}
+
+body > h2 > span > span{
+    display: block;
+    animation: anim 5s infinite ease;
+
+}
+
+@keyframes anim{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-100%);
+    }
+    40%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-300%);
+    }
+    80%{
+        transform: translateY(-400%);
+    }
+    100%{
+    transform: translateY(-500%);
+    }
+}
